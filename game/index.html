@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle Street Kitchen — a cooking game</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1806; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  canvas {
+    width: min(100vw, 1280px);
+    height: auto;
+    aspect-ratio: 1280 / 800;
+    box-shadow: 0 18px 60px rgba(0,0,0,0.55);
+    border-radius: 6px;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="kitchen" width="1280" height="800"></canvas>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
